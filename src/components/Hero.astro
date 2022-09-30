@@ -1,15 +1,14 @@
 <section class="container py-20 px-32">
     <div class="row py-20 my-20">
-        <div class="col-6 d-flex flex-column justify-center">
+        <div class="col-12 col-lg-6 d-flex flex-column justify-center text-container">
             <h1 class="mb-3">Hola<span>!</span> Soy Gonza</h1>
             <h3 class="mb-3">Front End & Email Developer</h3>
             <p>Ayudo a profesionales independientes y emprendedores <br> a obtener una mejor experiencia digital</p>
         </div>
-        <div class="col-6 d-flex justify-center align-items-center">
+        <div class="col-12 col-lg-6 d-flex justify-center align-items-center">
             <div class="img-container">
                 <img src="../assets/gonza.png" alt="Gonzalo Soria" class="gonza">
             </div>
-            
         </div>
     </div>
 </section>
@@ -24,8 +23,7 @@
     }
 
     span {
-        -webkit-text-stroke: 3px #FECE2F;
-        -webkit-text-fill-color: white;
+        color: #FECE2F;
     }
 
     h3 {
@@ -53,5 +51,19 @@
         left: 0;
         transform: translate(50%);
         width: 300px;
+    }
+
+    .text-container h1, .text-container h3, .text-container p {
+        padding-left: 10px;
+        z-index: 2;
+    }
+
+    .text-container::after {
+        content: '';
+        background-color: #ffe89e;
+        width: 50px;
+        height: 330px;
+        position: absolute;
+        z-index: 1;
     }
 </style>
