@@ -2,12 +2,18 @@
 import Menu from "./Menu.astro";
 ---
 
-<header class="container py-10 px-32 d-flex justify-between align-items-center">
-    <h2>gonzalosoria<span>dev</span></h2>
-    <Menu />
+<header class="fixed-top">
+    <div class="container py-10 px-32 d-flex justify-between align-items-center">
+        <h2>gonzalosoria<span>dev</span></h2>
+        <Menu />
+    </div>
 </header>
 
 <style>
+    header {
+        background-color: #F4F4F4;
+    }
+
     h2 {
         font-size: 20px;
         font-weight: 700;

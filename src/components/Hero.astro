@@ -1,81 +1,72 @@
-<section class="container py-20 px-32">
+<section class="container py-20 mt-20 px-32">
     <div class="row py-20">
         <div class="col-12 col-lg-6 d-flex flex-column justify-center text-container">
-            <h1 class="mb-3">Hola<span>!</span> Soy Gonza</h1>
-            <h3 class="mb-3">Front End & Email Developer</h3>
-            
-            <svg width="159" height="38" viewBox="0 0 159 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1 34.6973C16.8143 36.5547 28.4719 36.9972 43.1509 31.4189C51.2774 28.3306 60.0855 23.2889 65.6853 16.4946C66.4969 15.5098 76.1839 3.10366 72.6156 1.31962C68.8476 -0.564293 64.3641 6.40024 62.5534 8.63801C56.5556 16.0506 46.1268 35.1814 63.214 36.1775C75.0659 36.8684 86.6706 30.7515 97.5049 26.7581C117.164 19.5121 136.732 15.0372 157.456 12.0724" stroke="#000000" stroke-width="2" stroke-linecap="round"></path>
-              </svg>
-            
-            <p class="pt-5">Ayudo a profesionales independientes y emprendedores <br> a obtener una mejor experiencia digital</p>
-            <a href="#" class="mt-3 shadow">Hablemos</a>
+            <h1 class="mb-3">Hola! Soy Gonza</h1>
+            <h3 class="mb-3">Front End & Email Developer</h3>            
+            <p>Ayudo emprendedores a obtener <br> una mejor experiencia digital</p>
         </div>
         <div class="col-12 col-lg-6 d-flex justify-center align-items-center">
             <div class="img-container">
                 <img src="../assets/gonza.png" alt="Gonzalo Soria" class="gonza">
             </div>
-        </div>
+        </div>        
+        <svg width="77" height="85" viewBox="0 0 77 85" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.33755 84.3973C0.297616 62.7119 2.93494 39.8181 19.4192 23.8736C28.2211 15.3599 42.4944 12.5723 47.6281 26.2359C51.1245 35.5419 51.542 51.9945 41.0605 57.0865C29.486 62.7095 40.2945 35.2221 41.9942 32.4952C49.9497 19.7313 59.7772 11.6122 72.2699 3.78281C76.9496 0.849879 73.7108 0.477284 70.0947 1.13476C66.9572 1.7052 63.4035 2.43717 60.5291 3.81975C59.6524 4.24143 65.7349 2.73236 66.6827 2.44768C70.7471 1.22705 75.4874 -0.0219285 75.9527 5.60812C76.0274 6.5127 75.9956 14.9844 74.7481 15.2963C74.099 15.4586 71.0438 10.27 70.4642 9.65288C66.6996 5.64506 63.5835 4.42393 58.2726 5.11792" stroke="#212529" stroke-width="2" stroke-linecap="round"></path>
+        </svg>    
     </div>
 </section>
 
 <style>
     h1 {
-        font-size: 70px;
-        line-height: 73px;
+        font-size: 80px;
+        line-height: 83px;
         font-family: var(--playfair);
         font-weight: 700;
         color: #212529;
     }
 
-    span {
-        color: #FECE2F;
-    }
-
     h3 {
-        font-size: 30px;
+        font-size: 40px;
         font-weight: 700;
         color: #212529;
+        position: relative;
+        background-color: transparent;
+        z-index: 1;
     }
 
-    a {
-        font-size: 15px;
-        padding: 10px;
-        background-color: #FECE2F;
-        text-align: center;
-        width: 150px;
-        border-radius: 30px;
-        color: #ffffff;
+    h3::after {
+        content: '';
+        position: absolute;
+        background-color: #FF7468;
+        width: 91%;
+        height: 15px;
+        left: 0;
+        top: 27px;
+        z-index: -1;
     }
 
     p {
-        font-size: 18px;
+        font-size: 25px;
+        line-height: 29px;
     }
 
     .img-container {
         width: 60%;
         background-color: #FECE2F;
+        background-image: url('assets/pattern.png');
+        background-position: center;
+        background-size: contain;
         border-top-left-radius: 150px;
         border-top-right-radius: 150px;
     }
 
     .gonza {
-        width: 300px;
         margin: 0 auto;
         margin-top: -120px;
     }
 
-    .text-container h1, .text-container h3, .text-container p {
-        padding-left: 10px;
-        z-index: 2;
+    svg {
+        transform: rotate(135deg);
+        margin-top: 100px !important;
     }
-
-    /* .text-container::after {
-        content: '';
-        background-color: #FECE2F;
-        width: 30px;
-        height: 330px;
-        position: absolute;
-        z-index: 1;
-    } */
 </style>
